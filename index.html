@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flutterbea</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Flutterbea - Bio</title>
+<link rel="stylesheet" href="style.css" />
+<script src="script.js" defer></script>
 </head>
 <body>
 
 <div class="container">
-  <div class="sidebar">
-    <button onclick="showSection('about')">About</button>
-    <button onclick="showSection('links')">Links</button>
-    <button onclick="showSection('contact')">Contact</button>
-  </div>
+  <nav class="sidebar">
+    <button onclick="showSection('about')" class="sidebar-btn">About</button>
+    <button onclick="showSection('links')" class="sidebar-btn">Links</button>
+    <button onclick="showSection('contact')" class="sidebar-btn">Contact</button>
+  </nav>
 
-  <div class="main">
-    <div class="banner">
-      <img src="assets/banner.jpg" alt="Banner">
+  <main class="main-content">
+    <div class="banner-wrapper">
+      <img src="assets/banner.jpg" alt="Banner Flutterbea" class="banner" />
     </div>
 
-    <div class="content active" id="about">
-      <div class="glass-box">
+    <section id="about" class="content active">
+      <div class="glass-frame">
         <h2>Привет, сталкер/ша</h2>
         <p>На связи Flutterbea, позывной Безликий.</p>
         <p>Не буду тянуть, приступим.</p>
@@ -31,22 +31,22 @@
         <p>Всегда открыт для чего-то нового. Могу обсудить практически всё.</p>
         <p>Если не отвечаю — наберись терпения. В скором времени я отвечу.</p>
       </div>
-    </div>
+    </section>
 
-    <div class="content" id="links">
-      <div class="glass-box">
+    <section id="links" class="content">
+      <div class="glass-frame">
         <h2>Links</h2>
         <p><a href="https://t.me/flutterbea" target="_blank">@flutterbea</a></p>
       </div>
-    </div>
+    </section>
 
-    <div class="content" id="contact">
-      <div class="glass-box">
+    <section id="contact" class="content">
+      <div class="glass-frame">
         <h2>Contact</h2>
-        <p>Telegram: <a href="https://t.me/flutterbea">@flutterbea</a></p>
+        <p>Telegram: <a href="https://t.me/flutterbea" target="_blank">@flutterbea</a></p>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 </div>
 
 </body>
