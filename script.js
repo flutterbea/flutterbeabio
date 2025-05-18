@@ -1,11 +1,12 @@
 function showSection(id) {
   const sections = document.querySelectorAll('.content');
   sections.forEach(section => {
-    section.classList.remove('active');
+    if (section.id === id) {
+      section.classList.add('active');
+      section.classList.add('animated');
+    } else {
+      section.classList.remove('active');
+      section.classList.remove('animated');
+    }
   });
-  document.getElementById(id).classList.add('active');
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  showSection('about');
-});

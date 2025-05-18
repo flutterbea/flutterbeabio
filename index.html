@@ -10,10 +10,11 @@
 <body>
 
 <div class="container">
-  <nav class="sidebar">
-    <button onclick="showSection('about')" class="sidebar-btn">About</button>
-    <button onclick="showSection('links')" class="sidebar-btn">Links</button>
-    <button onclick="showSection('contact')" class="sidebar-btn">Contact</button>
+
+  <nav class="topbar">
+    <button onclick="showSection('about')" class="topbar-btn">About</button>
+    <button onclick="showSection('links')" class="topbar-btn">Links</button>
+    <button onclick="showSection('contact')" class="topbar-btn">Contact</button>
   </nav>
 
   <main class="main-content">
@@ -21,7 +22,7 @@
       <img src="assets/banner.jpg" alt="Banner Flutterbea" class="banner" />
     </div>
 
-    <section id="about" class="content active">
+    <section id="about" class="content active animated">
       <div class="glass-frame">
         <h2>Привет, сталкер/ша</h2>
         <p>На связи Flutterbea, позывной Безликий.</p>
@@ -33,14 +34,17 @@
       </div>
     </section>
 
-    <section id="links" class="content">
+    <section id="links" class="content animated">
       <div class="glass-frame">
         <h2>Links</h2>
-        <p><a href="https://t.me/flutterbea" target="_blank">@flutterbea</a></p>
+        <ul>
+          <li><a href="https://t.me/literatureclubwarsaw" target="_blank">@literatureclubwarsaw</a> — Инфо о лит клубе</li>
+          <li><a href="https://t.me/flutterbea1" target="_blank">@flutterbea1</a> — Личный Telegram с новостями</li>
+        </ul>
       </div>
     </section>
 
-    <section id="contact" class="content">
+    <section id="contact" class="content animated">
       <div class="glass-frame">
         <h2>Contact</h2>
         <p>Telegram: <a href="https://t.me/flutterbea" target="_blank">@flutterbea</a></p>
